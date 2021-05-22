@@ -1,5 +1,5 @@
 // Get all dom element
-const providedText = document.querySelector(".text p").innerText;
+const providedText = document.querySelector(".text p");
 const userText = document.querySelector("#text-area");
 const wpmText = document.querySelector("#wpm");
 const timer = document.querySelector(".timer");
@@ -8,6 +8,18 @@ let millisec = 0;
 let sec = 0;
 let min = 0;
 let interval;
+
+const loadText = () => {
+  fetch("https://goquotes-api.herokuapp.com/api/v1/random?count=1")
+    .then((res) => res.json())
+    .then((data) => {
+      let quote = data.quotes[0];
+      providedText.textContent = quote.text;
+    })
+    .catch((err) => console.error(err));
+};
+
+loadText();
 
 // Clock functionality
 const runTimer = () => {
@@ -50,7 +62,7 @@ const start = () => {
 
 // Calculate wpm functionality
 const calculateWpm = (str) => {
-  const totalTime = (min * 60 + sec) / 60;
+  const totalTime = (parseInt(min) * 60 + parseInt(sec)) / 60; // in minutes
   str = str.replace(/(^\s*)|(\s*$)/gi, "");
   str = str.replace(/[ ]{2,}/gi, " ");
   str = str.replace(/\n /, "\n");
@@ -62,14 +74,15 @@ const calculateWpm = (str) => {
 // Match the text with the provided text
 const matchText = () => {
   let userTextEntered = userText.value;
-  let originTextMatch = providedText.substring(0, userTextEntered.length);
+  let originatedText = providedText.innerText;
+  let originatedTextMatch = originatedText.substring(0, userTextEntered.length);
 
-  if (userTextEntered === providedText) {
+  if (userTextEntered === originatedText) {
     userText.style.borderColor = "#50e2d6";
-    calculateWpm(providedText);
+    calculateWpm(originatedText);
     clearInterval(interval);
   } else {
-    if (userTextEntered === originTextMatch) {
+    if (userTextEntered === originatedTextMatch) {
       userText.style.borderColor = "#fff";
     } else {
       userText.style.borderColor = "#f30000";
