@@ -78,5 +78,14 @@ const matchText = () => {
 };
 
 // Event listeners
-userText.addEventListener("keydown", start);
-userText.addEventListener("keyup", matchText);
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  userText.addEventListener("keydown", start);
+  userText.addEventListener("keyup", matchText);
+} else {
+  userText.addEventListener("keypress", start);
+  userText.addEventListener("keyup", matchText);
+}
