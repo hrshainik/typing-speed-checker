@@ -126,13 +126,15 @@ main {
     & textarea {
       background-color: #292929;
       width: 100%;
-      border: none;
+      // border: none;
+      border: 2px solid #fff;
       border-radius: 0.5rem;
       resize: vertical;
       color: #fff;
       padding: 2rem;
       font-size: 1.6rem;
       height: 100%;
+      transition: all 300ms ease;
 
       &:focus {
         outline: none;
