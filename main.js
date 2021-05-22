@@ -56,7 +56,6 @@ const calculateWpm = (str) => {
   str = str.replace(/\n /, "\n");
   const totalWords = str.split(" ").length;
   const wpm = parseInt(totalWords / totalTime);
-  console.log(wpm);
   wpmText.textContent = wpm;
 };
 
@@ -64,12 +63,11 @@ const calculateWpm = (str) => {
 const matchText = () => {
   let userTextEntered = userText.value;
   let originTextMatch = providedText.substring(0, userTextEntered.length);
-  console.log(originTextMatch);
 
   if (userTextEntered === providedText) {
     userText.style.borderColor = "#50e2d6";
-    clearInterval(interval);
     calculateWpm(providedText);
+    clearInterval(interval);
   } else {
     if (userTextEntered === originTextMatch) {
       userText.style.borderColor = "#fff";
@@ -80,5 +78,5 @@ const matchText = () => {
 };
 
 // Event listeners
-userText.addEventListener("keypress", start);
+userText.addEventListener("keydown", start);
 userText.addEventListener("keyup", matchText);
