@@ -55,7 +55,7 @@ const calculateWpm = (str) => {
   str = str.replace(/[ ]{2,}/gi, " ");
   str = str.replace(/\n /, "\n");
   const totalWords = str.split(" ").length;
-  const wpm = totalWords / totalTime;
+  const wpm = parseInt(totalWords / totalTime);
   console.log(wpm);
   wpmText.textContent = wpm;
 };
