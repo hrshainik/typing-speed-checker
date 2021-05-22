@@ -42,6 +42,10 @@ nav {
       display: flex;
       align-items: center;
 
+      @media (max-width: 750px) {
+        display: none;
+      }
+
       & :not(.nav-item:last-child) {
         margin-right: 2rem;
       }

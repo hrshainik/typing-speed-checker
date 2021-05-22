@@ -53,6 +53,12 @@ nav .navbar .nav-items {
           align-items: center;
 }
 
+@media (max-width: 750px) {
+  nav .navbar .nav-items {
+    display: none;
+  }
+}
+
 nav .navbar .nav-items :not(.nav-item:last-child) {
   margin-right: 2rem;
 }
