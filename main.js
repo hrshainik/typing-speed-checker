@@ -10,7 +10,7 @@ let min = 0;
 let interval;
 
 const loadText = () => {
-  fetch("/data.json")
+  fetch("https://hrshainik.github.io/Typing-Speed-Test/data.json")
     .then((res) => res.json())
     .then((data) => {
       let quote = data[Math.floor(Math.random() * 15)];
