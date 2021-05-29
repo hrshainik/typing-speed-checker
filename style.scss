@@ -71,6 +71,7 @@ nav {
 }
 
 .text {
+  user-select: none;
   width: 90%;
   max-width: 120rem;
   margin: 3rem auto;
@@ -130,7 +131,6 @@ main {
     & textarea {
       background-color: #292929;
       width: 100%;
-      // border: none;
       border: 2px solid #fff;
       border-radius: 0.5rem;
       resize: vertical;

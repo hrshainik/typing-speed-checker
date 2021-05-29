@@ -10,16 +10,16 @@ let min = 0;
 let interval;
 
 const loadText = () => {
-  fetch("https://goquotes-api.herokuapp.com/api/v1/random?count=1")
+  fetch("/data.json")
     .then((res) => res.json())
     .then((data) => {
-      let quote = data.quotes[0];
-      providedText.textContent = quote.text;
+      let quote = data[Math.floor(Math.random() * 15)];
+      providedText.textContent = quote.msg;
     })
     .catch((err) => console.error(err));
 };
 
-loadText();
+window.addEventListener("DOMContentLoaded", loadText);
 
 // Clock functionality
 const runTimer = () => {
