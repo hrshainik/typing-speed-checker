@@ -31,8 +31,9 @@ nav {
     padding: 1.5rem 0;
 
     & .logo {
-      & h1 {
+      & a {
         color: #fff;
+        cursor: pointer;
         font-size: 2.4rem;
         font-weight: 600;
       }
