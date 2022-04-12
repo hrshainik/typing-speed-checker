@@ -68,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://typingspeedchecker.netlify.app/)
 
 Here you can check your typing speed and it's very simple to use and also you don't need any kind of account just click and check.
 
@@ -128,5 +128,5 @@ Project Link: [https://github.com/hrshainik/typing-speed-checker](https://github
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/hrshainik
-[product-screenshot]: images/typing-speed-checker.png
+[product-screenshot]: img/typing-speed-checker.png
 
