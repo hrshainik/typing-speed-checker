@@ -10,7 +10,7 @@ let min = 0;
 let interval;
 
 const loadText = () => {
-  fetch("https://hrshainik.github.io/Typing-Speed-Test/data.json")
+  fetch("https://typingspeedchecker.netlify.app/data.json")
     .then((res) => res.json())
     .then((data) => {
       let quote = data[Math.floor(Math.random() * 15)];
