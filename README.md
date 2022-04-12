@@ -78,14 +78,10 @@ Here you can check your typing speed and it's very simple to use and also you do
 
 ### Built With
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [HTML5](https://nextjs.org/)
+* [CSS3](https://reactjs.org/)
+* [Sass](https://vuejs.org/)
+* [Vanila JavaScript](https://angular.io/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
