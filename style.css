@@ -38,8 +38,9 @@ nav .navbar {
   padding: 1.5rem 0;
 }
 
-nav .navbar .logo h1 {
+nav .navbar .logo a {
   color: #fff;
+  cursor: pointer;
   font-size: 2.4rem;
   font-weight: 600;
 }
