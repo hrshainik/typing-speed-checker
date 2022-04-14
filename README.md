@@ -38,7 +38,7 @@
 
 Here you can check your typing speed and it's very simple to use and also you don't need any kind of account just click and check.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">⇧Back To Top</a></p>
 
 ### Built With
 
@@ -47,7 +47,7 @@ Here you can check your typing speed and it's very simple to use and also you do
 * [Sass](https://sass-lang.com/)
 * [Vanilla JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">⇧Back To Top</a></p>
 
 
 <!-- CONTRIBUTING -->
@@ -64,7 +64,7 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">⇧Back To Top</a></p>
 
 
 
@@ -75,7 +75,7 @@ Habibur Rahman - [@portfoilo](https://hrshainik.me) - hrsshainik@gmail.com
 
 Project Link: [https://github.com/hrshainik/typing-speed-checker](https://github.com/hrshainik/typing-speed-checker)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right"><a href="#top">⇧Back To Top</a></p>
 
 [product-screenshot]: img/typing-speed-checker.png
 
